@@ -32,7 +32,7 @@ The following variables are set to `False` by default and will not have any effe
 ```yaml
 - hosts: all
   roles:
-    - kamaln7.swapfile
+    - ansible-swapfile
 ```
 
 or:
@@ -40,7 +40,7 @@ or:
 ```yaml
 - hosts: all
   roles:
-    - { role: kamaln7.swapfile, swapfile_size: 1GB, swapfile_swappiness: 10, swapfile_location: /mnt/swapfile }
+    - { role: ansible-swapfile, swapfile_size: 1GB, swapfile_swappiness: 10, swapfile_location: /mnt/swapfile }
 ```
 
 You can also set the variables described above in `group_vars` or `host_vars` (see `defaults/main.yml`).
